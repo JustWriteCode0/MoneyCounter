@@ -8,5 +8,5 @@ router.register(r'entry', EntryViewSet, basename='entry')
 print(router.urls)
 
 urlpatterns = [
-    path('entry', include(router.urls))
+    path('', include(router.urls))
 ]
